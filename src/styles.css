@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #2b1055, #000);
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.game {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+}
+
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  margin-bottom: 14px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  margin: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #7f5cff;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+.square:hover {
+  box-shadow: 0 0 12px #7f5cff;
+}
+
+
+.square.x {
+  color: #4cc9f0;
+  text-shadow: 0 0 5px #4cc9f0, 0 0 10px #4cc9f0, 0 0 20px #4cc9f0;
+}
+
+
+.square.o {
+  color: #ff4d6d;
+  text-shadow: 0 0 5px #ff4d6d, 0 0 10px #ff4d6d, 0 0 20px #ff4d6d;
+}
+
+
+
+button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #7f5cff;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #7f5cff;
+}
+
+.reset {
+  margin-top: 14px;
+}
+
+
+
+.game-info {
+  display: flex;
+  gap: 24px;
+}
+
+.moves,
+.results {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px;
+  border: 1px solid #7f5cff;
+  box-shadow: 0 0 10px rgba(127, 92, 255, 0.5);
+}
+
+.moves {
+  max-height: 300px;
+  overflow-y: auto;
+  min-width: 180px;
+}
+
+.results {
+  min-width: 220px;
+  border-left: 2px solid #ff4d6d;
+}
+
+h3 {
+  margin-top: 0;
+  text-shadow: 0 0 6px #7f5cff;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.info-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.moves,
+.results,
+.achievements {
+  flex: 1;
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+.results ul,
+.moves ol {
+  padding-left: 20px;
+}
